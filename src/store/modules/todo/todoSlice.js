@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://mevn-todo-api.onrender.com/api/todo/";
+const API_URL = "/api/todo/";
 
 const userString = localStorage.getItem("user");
 let token = "";

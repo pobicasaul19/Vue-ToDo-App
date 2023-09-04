@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://mevn-todo-api.onrender.com/api/user/";
+const API_URL = "/api/user/";
 
 // Register User
 const register = async (userData) => {
