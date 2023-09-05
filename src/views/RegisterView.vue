@@ -19,20 +19,6 @@ export default {
       try {
         await this.$store.dispatch("registerUser", this.registerData);
         this.$router.push({ name: "\u2015 Log-in" });
-        useToast.success("Registration successful. Please log in.", {
-          timeout: 3000,
-          position: "top-right",
-          closeOnClick: true,
-          pauseOnFocusLoss: true,
-          pauseOnHover: true,
-          draggable: true,
-          draggablePercent: 0.6,
-          showCloseButtonOnHover: false,
-          hideProgressBar: true,
-          closeButton: "button",
-          icon: "fas fa-rocket",
-          rtl: false,
-        });
       } catch {
         useToast.error("Registration failed. Please try again.");
       }
